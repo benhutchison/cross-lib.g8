@@ -16,9 +16,7 @@ lazy val root = project.in(file(".")).aggregate($name;format="camel"$JS, $name;f
         tagRelease,
         ReleaseStep(action = Command.process("publishSigned", _), enableCrossBuild = true),
         setNextVersion,
-        commitNextVersion,
-        ReleaseStep(action = Command.process("sonatypeReleaseAll", _), enableCrossBuild = true),
-        pushChanges
+        commitNextVersion
     )}
   )
 

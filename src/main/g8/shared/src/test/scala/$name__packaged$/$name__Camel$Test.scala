@@ -1,4 +1,4 @@
-package $organization$
+package $name;format="lower"$
 
 import org.scalatest.{FunSuite, Matchers}
 
